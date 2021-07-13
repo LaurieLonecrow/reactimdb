@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   max-width: var(--maxWidth);
@@ -7,9 +7,7 @@ export const Wrapper = styled.div`
 
   h1 {
     color: var(--medGrey);
-  }
 
-  h1 {
     @media screen and (max-width: 768px) {
       font-size: var(--fontBig);
     }
