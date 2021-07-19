@@ -6,16 +6,16 @@ import {
   REQUEST_TOKEN_URL,
   LOGIN_URL,
   SESSION_ID_URL,
-} from './config';
+} from "./config";
 
 const defaultConfig = {
-  method: 'POST',
+  method: "POST",
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 };
 
-export default {
+const API = {
   fetchMovies: async (searchTerm, page) => {
     const endpoint = searchTerm
       ? `${SEARCH_BASE_URL}${searchTerm}&page=${page}`
@@ -60,3 +60,5 @@ export default {
     }
   },
 };
+
+export default API;
