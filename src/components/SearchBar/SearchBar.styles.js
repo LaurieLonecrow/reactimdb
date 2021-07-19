@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   height: 100px;
   background: var(--darkGrey);
-  padding: 0 20px;
+  padding: 20px 20px;
 `;
 
 export const Content = styled.div`
@@ -26,7 +26,7 @@ export const Content = styled.div`
   }
 
   input {
-    font-size: 28px;
+    font-size: var(--fontBig);
     position: absolute;
     left: 0px;
     margin: 8px 0;
